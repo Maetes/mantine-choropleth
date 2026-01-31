@@ -1,0 +1,94 @@
+{
+  "name": "mantine-choropleth",
+  "version": "0.0.1",
+  "description": "A high-performance, canvas-rendered Choropleth Map component for Mantine v8 with zoom, tooltips, legends, and animations",
+  "author": "Martin Mueller",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maetes/mantine-choropleth.git"
+  },
+  "homepage": "https://maetes.github.io/mantine-choropleth/",
+  "bugs": {
+    "url": "https://github.com/maetes/mantine-choropleth/issues"
+  },
+  "keywords": [
+    "mantine",
+    "choropleth",
+    "map",
+    "react",
+    "canvas",
+    "d3",
+    "geojson",
+    "visualization",
+    "data-visualization",
+    "geographic"
+  ],
+  "private": false,
+  "type": "module",
+  "packageManager": "npm@11.6.2",
+  "main": "dist/mantine-choropleth.umd.cjs",
+  "module": "dist/mantine-choropleth.js",
+  "types": "dist/mantine-choropleth.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/mantine-choropleth.d.ts",
+      "import": "./dist/mantine-choropleth.js",
+      "require": "./dist/mantine-choropleth.umd.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:lib": "tsc -b && vite build",
+    "build:demo": "vite build --config vite.config.demo.ts",
+    "build:all": "npm run build:lib && npm run build:demo",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "test": "vitest run",
+    "preview": "vite preview",
+    "preview:demo": "vite preview --config vite.config.demo.ts",
+    "prepublishOnly": "npm run build:lib"
+  },
+  "peerDependencies": {
+    "@mantine/core": "^8.3.13",
+    "@mantine/hooks": "^8.3.13",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "dependencies": {
+    "d3": "^7.9.0",
+    "d3-geo": "^3.1.1",
+    "d3-scale": "^4.0.2",
+    "d3-scale-chromatic": "^3.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@mantine/core": "^8.3.13",
+    "@mantine/hooks": "^8.3.13",
+    "@types/d3": "^7.4.3",
+    "@types/d3-geo": "^3.1.0",
+    "@types/d3-scale": "^4.0.9",
+    "@types/d3-scale-chromatic": "^3.1.0",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.0.18"
+  }
+}
