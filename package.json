@@ -1,6 +1,6 @@
 {
   "name": "mantine-choropleth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A high-performance, canvas-rendered Choropleth Map component for Mantine v8 with zoom, tooltips, legends, and animations",
   "author": "Martin Mueller",
   "license": "MIT",
