@@ -6,7 +6,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/maetes/mantine-choropleth.git"
+    "url": "git+https://github.com/maetes/mantine-choropleth.git"
   },
   "homepage": "https://maetes.github.io/mantine-choropleth/",
   "bugs": {
@@ -29,10 +29,10 @@
   "packageManager": "npm@11.6.2",
   "main": "dist/mantine-choropleth.umd.cjs",
   "module": "dist/mantine-choropleth.js",
-  "types": "dist/mantine-choropleth.d.ts",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/mantine-choropleth.d.ts",
+      "types": "./dist/index.d.ts",
       "import": "./dist/mantine-choropleth.js",
       "require": "./dist/mantine-choropleth.umd.cjs"
     }

@@ -8,8 +8,8 @@ export default defineConfig({
     react(),
     // Generates .d.ts files for TypeScript support
     dts({
-      include: ['src/index.ts'],
-      rollupTypes: true,
+      include: ['src/index.ts', 'src/choropleth/**/*'],
+      entryRoot: 'src',
       tsconfigPath: resolve(__dirname, 'tsconfig.app.json'),
     })
   ],

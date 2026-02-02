@@ -11,6 +11,8 @@ node_modules
 dist-demo
 dist-ssr
 *.local
+dist
+.npmrc
 
 # Editor directories and files
 .vscode/*
